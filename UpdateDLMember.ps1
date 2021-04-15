@@ -7,5 +7,5 @@
 #>
 
 Import-CSV 'C:\temp\Local Scripts\Imports\SocialClubMembers_Update.csv' | ForEach-Object {
-    Add-DistributionGroupMember -Identity "SocialClubMembers@communities.wa.gov.au" -Member $_.Name -Verbose
+    Add-DistributionGroupMember -Identity "#DL Primary Address#" -Member $_.Name -Verbose
 }
