@@ -7,7 +7,7 @@ Author: Matthew Heuer
 #>
 
 Import-Module ActiveDirectory
-$Users = Import-Csv \\dhw.wa.gov.au\HousingUsers\AtoL\UHEUEM1\EntOps\Imports\ManagerChange.csv
+$Users = Import-Csv #Import Path#
 $Type = 'Training Account'
 $ErrorActionPreference = 'Stop'
 
