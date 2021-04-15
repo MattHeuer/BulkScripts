@@ -10,7 +10,7 @@ $Users = Import-Csv 'C:\temp\Local Scripts\BulkADScripts\Import\TeamsGroupAddLis
 $ErrorActionPreference = 'Stop'
 
 foreach ($User in $Users) {
-    Add-ADGroupMember -Identity d -Members $User -Verbose
+    Add-ADGroupMember -Identity #Group Name# -Members $User -Verbose
 }
 
-Write-Host "Accounts successfully added to APP_Microsoft_Office_365_PhoneSystem!" -ForegroundColor Green
+Write-Host "Accounts successfully added to #Group Name#!" -ForegroundColor Green
