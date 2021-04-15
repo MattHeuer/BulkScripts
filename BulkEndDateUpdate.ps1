@@ -9,7 +9,7 @@ Author: Matt Heuer
 
 $ErrorActionPreference = 'Stop'
 Import-Module ActiveDirectory
-$NewUsers = Get-Content -path '\\dhw.wa.gov.au\corporatedata\IS\TSS\Support Centre\EntOps\Scripts\Imports\ExtendAccounts.txt'
+$NewUsers = Get-Content -path #Import Path#
 $EndDate = Read-Host "Enter the expiry date for the accounts"
 
 ForEach ($User in $NewUsers) {
