@@ -2,7 +2,7 @@ Import-Module ActiveDirectory
 
 #Textfile containing all the required SamAccountNames
 $NewUsers = Get-Content -Path "C:\temp\MHeuer\ViewpointUserSamAccountName.txt"
-$OU = "OU=Users,OU=Communities,DC=dhw,DC=wa,DC=gov,DC=au"
+$OU = "#OU CN#"
 $Password = @()
 $Creds = Get-Credential
 
