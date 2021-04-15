@@ -1,5 +1,5 @@
 import-module activedirectory
 
-Get-Content 'C:\temp\Local Scripts\Exports\CorporateData_Geraldton\DOM_FSP_Gera_StaffMoves_RW.csv' |
+Get-Content '#Import Path#' |
 ForEach-Object {Get-ADUser $_ -Properties DisplayName}  | Select-Object  samaccountname,DisplayName |
-Export-Csv 'C:\temp\Local Scripts\Exports\CorporateData_Geraldton\FINAL\DOM_FSP_Gera_StaffMoves_RW.csv' -NoTypeInformation
+Export-Csv '#Export Path#' -NoTypeInformation
